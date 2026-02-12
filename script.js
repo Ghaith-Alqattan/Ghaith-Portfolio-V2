@@ -92,7 +92,7 @@ function initializeThemeToggle() {
     const toggles = document.querySelectorAll('.theme-toggle, .theme-toggle-mobile');
     const html = document.documentElement;
 
-    const savedTheme = localStorage.getItem('theme') || 'light';
+    const savedTheme = localStorage.getItem('theme') || 'dark';
     html.setAttribute('data-theme', savedTheme);
 
     toggles.forEach(toggle => {
@@ -129,7 +129,7 @@ function updateLanguage() {
 
     html.setAttribute('lang', currentLang);
     html.setAttribute('dir', currentLang === 'ar' ? 'rtl' : 'ltr');
-    
+
     langTexts.forEach(el => {
         el.textContent = currentLang.toUpperCase();
     });
@@ -355,9 +355,9 @@ function initialize3DHover() {
             const centerY = rect.height / 2;
             const rotateX = (centerY - y) / 10;
             const rotateY = (x - centerX) / 10;
-            
+
             card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
-            
+
             // Handle glow effect for skill items
             if (card.classList.contains('skill-item')) {
                 const glow = card.querySelector('::before');
