@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Mohammad Ghaith | Software Developer | Professional Portfolio</title>
+    <meta name="description" content="Ghaith Al-Qattan - Professional Web & Mobile Application Developer. Specializing in modern web technologies, mobile apps, and innovative digital solutions. View my portfolio and projects.">
+    <meta name="keywords" content="Ghaith Al-Qattan, Web Developer, Mobile Developer, Full Stack Developer, Portfolio, JavaScript, React, Node.js, App Development">
+    <meta name="author" content="Ghaith Al-Qattan">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English, Arabic">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ghaith-al-qattan.vercel.app/">
+    <meta property="og:title" content="Ghaith Al-Qattan | Expert Web & Mobile Apps Developer">
+    <meta property="og:description" content="Professional Web & Mobile Application Developer. View my portfolio of innovative digital solutions.">
+    <meta property="og:image" content="https://ghaith-al-qattan.vercel.app/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ghaith-al-qattan.vercel.app/">
+    <meta property="twitter:title" content="Ghaith Al-Qattan | Expert Web & Mobile Apps Developer">
+    <meta property="twitter:description" content="Professional Web & Mobile Application Developer. View my portfolio of innovative digital solutions.">
+    <meta property="twitter:image" content="https://ghaith-al-qattan.vercel.app/og-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://ghaith-al-qattan.vercel.app/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favIcon.png">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ghaith Al-Qattan",
+      "jobTitle": "Web & Mobile Applications Developer",
+      "url": "https://ghaith-al-qattan.vercel.app/",
+      "sameAs": [
+        "https://github.com/ghaith-al-qattan",
+        "https://linkedin.com/in/ghaith-al-qattan",
+        "https://www.instagram.com/ghaith_alqattan",
+        "https://www.facebook.com/ghaith.al.qattan"
+      ],
+      "knowsAbout": ["Web Development", "Mobile Development", "JavaScript", "React", "Node.js"],
+      "description": "Professional Web & Mobile Application Developer specializing in modern web technologies and innovative digital solutions."
+    }
+    </script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="logo-ring"></div>
+                <div class="logo-ring"></div>
+                <div class="logo-ring"></div>
+                <span class="logo-text">G</span>
+            </div>
+            <div class="loading-text">
+                <span class="loading-percentage">0%</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Effects -->
+    <div class="bg-effects">
+        <canvas id="particles-canvas"></canvas>
+        <div class="geometric-shapes"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="brand-icon">{"</>"}</span>
+            <span class="brand-text" data-en="Mohammad Ghaith" data-ar="محمد غيث">Mohammad Ghaith</span>
+        </div>
+        
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link active" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                <li><a href="#why" class="nav-link" data-en="Why Me" data-ar="لماذا أنا">Why Me</a></li>
+                <li><a href="#about" class="nav-link" data-en="About" data-ar="عني">About</a></li>
+                <li><a href="#projects" class="nav-link" data-en="Projects" data-ar="المشاريع">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-en="Contact" data-ar="اتصل بي">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-controls">
+            <!-- Theme Toggle -->
+            <button class="theme-toggle md-only" aria-label="Toggle theme">
+                <div class="toggle-track">
+                    <div class="toggle-thumb">
+                        <i class="fas fa-sun sun-icon"></i>
+                        <i class="fas fa-moon moon-icon"></i>
+                    </div>
+                </div>
+            </button>
+            
+            <!-- Language Toggle -->
+            <button class="lang-toggle md-only" aria-label="Toggle language">
+                <span class="lang-icon">🌐</span>
+                <span class="lang-text">EN</span>
+            </button>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#hero" class="mobile-nav-link" data-en="Home" data-ar="الرئيسية">Home</a></li>
+            <li><a href="#why" class="mobile-nav-link" data-en="Why Me" data-ar="لماذا أنا">Why Me</a></li>
+            <li><a href="#about" class="mobile-nav-link" data-en="About" data-ar="عني">About</a></li>
+            <li><a href="#projects" class="mobile-nav-link" data-en="Projects" data-ar="المشاريع">Projects</a></li>
+            <li><a href="#contact" class="mobile-nav-link" data-en="Contact" data-ar="اتصل بي">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-controls">
+            <div class="nav-controls">
+            <!-- Theme Toggle -->
+            <button class="theme-toggle" aria-label="Toggle theme">
+                <div class="toggle-track">
+                    <div class="toggle-thumb">
+                        <i class="fas fa-sun sun-icon"></i>
+                        <i class="fas fa-moon moon-icon"></i>
+                    </div>
+                </div>
+            </button>
+            
+            <!-- Language Toggle -->
+            <button class="lang-toggle" aria-label="Toggle language">
+                <span class="lang-icon">🌐</span>
+                <span class="lang-text">EN</span>
+            </button>
+        </div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <main id="main-container">
+        <!-- Section 1: Hero -->
+        <section class="section hero-section" id="hero">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <div class="image-glow"></div>
+                        <img src="images/Ghaith.jpeg" alt="Ghaith Al-Qattan" class="profile-img">
+                        <div class="image-border"></div>
+                    </div>
+                </div>
+                
+                <div class="hero-text">
+                    <div class="hero-greeting">
+                        <span class="wave">👋</span>
+                        <span data-en="Hello, I'm" data-ar="مرحباً، أنا">Hello, I'm</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Mohammad</span>
+                        <span class="title-line">Ghaith</span>
+                    </h1>
+                    <div class="hero-subtitle">
+                        <span class="typing-text" data-en="Software Developer" data-ar="مطور برمجيات">Software Developer</span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description" data-en="Software Developer with 2 years of experience building responsive and dynamic applications using React.js, Next.js, TypeScript, and modern UI frameworks." data-ar="مطور برمجيات بخبرة سنتين في بناء تطبيقات متجاوبة وديناميكية باستخدام React.js و Next.js و TypeScript وأطر عمل واجهة المستخدم الحديثة.">
+                        Software Developer with 2 years of experience building responsive and dynamic applications using React.js, Next.js, TypeScript, and modern UI frameworks.
+                    </p>
+                    
+                    <div class="hero-cta">
+                        <a href="https://drive.google.com/file/d/1EOve7JD61CGMX_0ktp5en-fYvusziX85/view?usp=sharing" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-download"></i>
+                            <span data-en="Download CV" data-ar="تحميل السيرة الذاتية">Download CV</span>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-paper-plane"></i>
+                            <span data-en="Get In Touch" data-ar="تواصل معي">Get In Touch</span>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-social">
+                        <a href="https://github.com/Ghaith-Alqattan" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/ghaith-al-qattan" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ghaith_alqattan?utm_source=qr&igsh=ZnkwN3kxYXJ1Nmky" target="_blank" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/ghaith.al.qattan?mibextid=ZbWKwL" target="_blank" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://wa.me/963944520044" target="_blank" class="social-link" aria-label="Whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span data-en="Scroll to explore" data-ar="مرر للاستكشاف">Scroll to explore</span>
+            </div>
+        </section>
+
+        <!-- Section 2: Why Me -->
+        <section class="section why-section" id="why">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title" data-en="Why Choose Me" data-ar="لماذا تختارني">Why Choose Me</h2>
+                <p class="section-subtitle" data-en="Experience my work in an interactive showcase" data-ar="اكتشف أعمالي في عرض تفاعلي">Experience my work in an interactive showcase</p>
+            </div>
+            
+            <div class="why-content">
+                <div class="iphone-mockup">
+                    <div class="iphone-frame">
+                        <div class="iphone-notch"></div>
+                        <div class="iphone-screen">
+                            <div class="mini-portfolio-content">
+                                <div class="mini-header">
+                                    <div class="mini-avatar">G</div>
+                                    <div class="mini-info">
+                                        <h4>Mohammad Ghaith</h4>
+                                        <p>Software Developer</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="mini-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-number">15+</div>
+                                        <div class="stat-label">Projects</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-number">2+</div>
+                                        <div class="stat-label">Years</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-number">100%</div>
+                                        <div class="stat-label">Happy</div>
+                                    </div>
+                                </div>
+
+                                <div class="mini-skills">
+                                    <h5>Skills</h5>
+                                    <div class="mini-skill-tags">
+                                        <span>React.js</span>
+                                        <span>Next.js</span>
+                                        <span>TypeScript</span>
+                                        <span>PostgreSQL</span>
+                                        <span>MongoDB</span>
+                                        <span>React Native</span>
+                                    </div>
+                                </div>
+
+                                <div class="mini-projects">
+                                    <h5>Recent Work</h5>
+                                    <div class="mini-project-card">
+                                        <div class="mini-project-img"><img src="images/hr-trust.jpg" alt=""></div>
+                                        <div class="mini-project-info">
+                                            <h6>Hr-Trust</h6>
+                                            <p>Landing page with dashboard</p>
+                                        </div>
+                                    </div>
+                                    <div class="mini-project-card">
+                                        <div class="mini-project-img"><img src="images/arab-auditor.jpg" alt=""></div>
+                                        <div class="mini-project-info">
+                                            <h6>Arab Auditors</h6>
+                                            <p>Auditing Company Website</p>
+                                        </div>
+                                    </div>
+                                    <div class="mini-project-card">
+                                        <div class="mini-project-img"><img src="images/local-check.png" alt=""></div>
+                                        <div class="mini-project-info">
+                                            <h6>Local Check</h6>
+                                            <p>full Auditing Platform</p>
+                                        </div>
+                                    </div>
+                                    <div class="mini-project-card">
+                                        <div class="mini-project-img"><img src="images/ghaith-template.jpg" alt=""></div>
+                                        <div class="mini-project-info">
+                                            <h6>Ghaith's Dashboard Template</h6>
+                                            <p>Private Dashboard template by Next.js</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="why-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 data-en="Clean Code" data-ar="كود نظيف">Clean Code</h3>
+                        <p data-en="Writing maintainable, scalable, and efficient code following industry best practices." data-ar="كتابة كود قابل للصيانة والتطوير وفعال باتباع أفضل ممارسات الصناعة.">Writing maintainable, scalable, and efficient code following industry best practices.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 data-en="Responsive Design" data-ar="تصميم متجاوب">Responsive Design</h3>
+                        <p data-en="Creating seamless experiences across all devices, from mobile to desktop." data-ar="إنشاء تجارب سلسة عبر جميع الأجهزة، من الجوال إلى سطح المكتب.">Creating seamless experiences across all devices, from mobile to desktop.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 data-en="Fast Performance" data-ar="أداء سريع">Fast Performance</h3>
+                        <p data-en="Optimizing applications for maximum speed and smooth user interactions." data-ar="تحسين التطبيقات لتحقيق أقصى سرعة وتفاعلات مستخدم سلسة.">Optimizing applications for maximum speed and smooth user interactions.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 data-en="Innovative Solutions" data-ar="حلول مبتكرة">Innovative Solutions</h3>
+                        <p data-en="Bringing creative ideas to life with the latest technologies and trends." data-ar="تحويل الأفكار الإبداعية إلى واقع باستخدام أحدث التقنيات والاتجاهات.">Bringing creative ideas to life with the latest technologies and trends.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: About -->
+        <section class="section about-section" id="about">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title" data-en="About Me" data-ar="عني">About Me</h2>
+                <p class="section-subtitle" data-en="My journey, skills, and experience" data-ar="رحلتي ومهاراتي وخبراتي">My journey, skills, and experience</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-main">
+                    <div class="about-text">
+                        <h3 data-en="Who I Am" data-ar="من أنا">Who I Am</h3>
+                        <p data-en="I am a Software Developer with 2 years of experience building responsive and dynamic applications using React.js, Next.js, TypeScript, and modern UI frameworks. Currently pursuing a B.S. in Computer and Automation Engineering (4th year) at Damascus University." data-ar="أنا مطور برمجيات بخبرة سنتين في بناء تطبيقات متجاوبة وديناميكية باستخدام React.js و Next.js و TypeScript وأطر عمل واجهة المستخدم الحديثة. أتابع حالياً دراسة البكالوريوس في هندسة الحاسبات والأتمتة (السنة الرابعة) في جامعة دمشق.">
+                            I am a Software Developer with 2 years of experience building responsive and dynamic applications using React.js, Next.js, TypeScript, and modern UI frameworks. Currently pursuing a B.S. in Computer and Automation Engineering (4th year) at Damascus University.
+                        </p>
+                    </div>
+                    
+                    <div class="skills-container">
+                        <h3 data-en="My Skills" data-ar="مهاراتي">My Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fab fa-react"></i>
+                                <span>React.js</span>
+                                <div class="skill-level" style="--level: 90%"></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-rocket"></i>
+                                <span>Next.js</span>
+                                <div class="skill-level" style="--level: 90%"></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>React Native</span>
+                                <div class="skill-level" style="--level: 65%"></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-paint-brush"></i>
+                                <span>Tailwind Css</span>
+                                <div class="skill-level" style="--level: 90%"></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js"></i>
+                                <span>TypeScript / JavaScript</span>
+                                <div class="skill-level" style="--level: 85%"></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-paint-roller"></i>
+                                <span>Material UI (MUI)</span>
+                                <div class="skill-level" style="--level: 85%"></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>MongoDB</span>
+                                <div class="skill-level" style="--level: 65%"></div>
+                            </div>
+
+                            <div class="skill-item">
+                                <i class="fas fa-fire"></i>
+                                <span>Firebase</span>
+                                <div class="skill-level" style="--level: 65%"></div>
+                            </div>
+
+                            <div class="skill-item">
+                                <i class="fa-brands fa-wordpress"></i>
+                                <span>WordPress</span>
+                                <div class="skill-level" style="--level: 50%"></div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <i class="fab fa-laravel"></i>
+                                <span>Laravel Blade</span>
+                                <div class="skill-level" style="--level: 30%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-experience">
+                    <h3 data-en="Experience" data-ar="الخبرة">Experience</h3>
+                    <div class="experience-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">Feb 2025 - Present</span>
+                                <h4 data-en="Web Developer @ Pioneers Network" data-ar="مطور ويب @ Pioneers Network">Web Developer @ Pioneers Network</h4>
+                                <p data-en="Developing websites and web applications fully flexible and responsive for clients in Saudi Arabia." data-ar="تطوير مواقع الويب وتطبيقاتها، مع توفير مرونة واستجابة كاملة للعملاء في المملكة العربية السعودية.">Developing websites and web applications fully flexible and responsive for clients in Saudi Arabia.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">Feb 2025 - Present</span>
+                                <h4 data-en="Technical Supervisor @ Vica Web Solutions" data-ar="مشرف تقني @ Vica Web Solutions">Supervisor @ Vica Web Solutions</h4>
+                                <p data-en="Supervising JavaScript and React.js trainees and correcting their tasks." data-ar="الإشراف على متدربي JavaScript و React.js وتصحيح مهامهم.">Supervising JavaScript and React.js trainees and correcting their tasks.</p>
+                            </div>
+                        </div>
+                         <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">Dec 2024 - Jun 2025</span>
+                                <h4 data-en="Volunteer Tech Lead @ Hamak" data-ar="قائد فريق متطوع @ كلية الهمك">Volunteer Tech Lead @ Hamak</h4>
+                                <p data-en="The front-end team leader who leads the front-end projects developed with React.js and supervises the work of his team." data-ar="قائد فريق الواجهة الأمامية الذي يقود مشاريع الواجهة الأمامية المطورة باستخدام React.js ويشرف على عمل فريقه.">The front-end team leader who leads the front-end projects developed with React.js and supervises the work of his team.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">Jun 2024 - Jan 2025</span>
+                                <h4 data-en="Fullstack Developer Trainee @ Vica" data-ar="متدرب مطور متكامل @ Vica">Fullstack Developer Trainee @ Vica</h4>
+                                <p data-en="Built fullstack applications using Next.js,React.js, Prisma, and PostgreSQL." data-ar="بناء تطبيقات متكاملة باستخدام Next.js و Prisma و PostgreSQL.">Built fullstack applications using Next.js,React.js, Prisma, and PostgreSQL.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">Dec 2023 - Feb 2025</span>
+                                <h4 data-en="Freelancer & Trainer" data-ar="مختص عمل حر و مدرّب">Freelancer & Trainer</h4>
+                                <p data-en="Enabling trainees to mastering Front-End development by training them starting from scratch and reaching the top." data-ar="تمكين المتدربين من إتقان تطوير واجهات المستخدم من خلال تدريبهم بدءًا من الصفر و
+الوصول إلى القمة.">Enabling trainees to mastering Front-End development by training them starting from scratch and
+reaching the top.
+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Projects -->
+        <section class="section projects-section" id="projects">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title" data-en="My Projects" data-ar="مشاريعي">My Projects</h2>
+                <p class="section-subtitle" data-en="A showcase of my recent work" data-ar="عرض لأعمالي الأخيرة">A showcase of my recent work</p>
+            </div>
+            
+            <div class="projects-grid">
+                 <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/foam-road.jpg" alt="Foam Road">
+                        <div class="project-overlay">
+                            <a href="https://cp.foamroad.app/" class="project-link" aria-label="View project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-en="Foam Road" data-ar="فوم رود">Foam Road</h3>
+                        <p data-en="Foam Road biker PWA,admin & supervisor Dashboard for car wash in Saudi Arabia , Riyadh" data-ar="لوحة تحكم سائقي الدراجات الهوائية على الطرق الرغوية، والمسؤولين، والمشرفين في مغسلة سيارات في الرياض، المملكة العربية السعودية">Foam Road biker PWA,admin & supervisor Dashboard for car wash in Saudi Arabia , Riyadh</p>
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>MUI</span>
+                            <span>Tailwind</span>
+                            <span>MongoDB</span>
+                            <span>Firebase</span>
+                            <span>Responsive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/local-check.png" alt="Local Check Platform">
+                        <div class="project-overlay">
+                            <a href="https://lcgp.vercel.app/en" class="project-link" aria-label="View project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-en="Local Check Platform" data-ar="منصة التدقيق المحلي">Local Check Platform</h3>
+                        <p data-en="Platform for files auditing in Saudi Arabia with technical support integration." data-ar="منصة لتدقيق الملفات في السعودية مع تكامل الدعم الفني.">Platform for files auditing in Saudi Arabia with technical support integration.</p>
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>MongoDB</span>
+                            <span>Tailwind</span>
+                            <span>AI Assistant</span>
+                            <span>Responsive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/arab-auditor.jpg" alt="Arab Auditors">
+                        <div class="project-overlay">
+                            <a href="https://arabcpa.com.sa/" class="project-link" aria-label="View project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-en="Arab Auditors" data-ar="المدققون العرب">Arab Auditors</h3>
+                        <p data-en="Professional landing page for auditing services in Saudi Arabia." data-ar="صفحة هبوط احترافية لخدمات التدقيق في السعودية.">Professional landing page for auditing services in Saudi Arabia.</p>
+                        <div class="project-tags">
+                            <span>WordPress</span>
+                            <span>Responsive</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/car-control.jpeg" alt="Car Control App">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Ghaith-Alqattan/semi-smart-car-application" class="project-link" aria-label="View project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-en="Car Control Application" data-ar="تطبيق للتحكم بسيارة ذكية">Car Control Application</h3>
+                        <p data-en="React Native Mobile Application for controlling a smart car built by arduino and esp32" data-ar="تطبيق جوال مبني باستخدام React Native للتحكم في سيارة ذكية تم تطويرها بواسطة Arduino و ESP32">React Native Mobile Application for controlling a smart car built by arduino and esp32</p>
+                        <div class="project-tags">
+                            <span>React Native</span>
+                            <span>TypeScript</span>
+                            <span>Web Socket</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/hr-trust.jpg" alt="Hr-Trust">
+                        <div class="project-overlay">
+                            <a href="https://hr-trust.com/en" class="project-link" aria-label="View project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-en="Hr-Trust" data-ar="Hr-Trust">Hr-Trust</h3>
+                        <p data-en="Hr-Trust Landing Page for Human resources in Saudi Arabia" data-ar="صفحة Hr-Trust الرئيسية للموارد البشرية في المملكة العربية السعودية">Hr-Trust Landing Page for Human resources in Saudi Arabia</p>
+                        <div class="project-tags">
+                            <span>Laravel Blade</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/ghaith-template.jpg" alt="Dashboard Template">
+                        <div class="">
+                            <a href="#" class="" aria-label="View project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-en="Private Dashboard Template" data-ar="قالب لوحة تحكم خاصة">Car Wash Admin Dashboard</h3>
+                        <p data-en="Custom admin Dashboard Template for properties made by me." data-ar="قالب لوحة تحكم إدارية مخصصة للعقارات قمتُ بتجهيزه.">Custom admin Dashboard Template for properties made by me.</p>
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>Chart Js</span>
+                            <span>Tailwind</span>
+                            <span>Responsive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Contact -->
+        <section class="section contact-section" id="contact">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title" data-en="Get In Touch" data-ar="تواصل معي">Get In Touch</h2>
+                <p class="section-subtitle" data-en="Let's create something amazing together" data-ar="لنصنع شيئاً مذهلاً معاً">Let's create something amazing together</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-description" data-en="I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!" data-ar="أنا دائماً مهتم بسماع المشاريع والفرص الجديدة. سواء كان لديك سؤال أو تريد فقط أن تقول مرحباً، لا تتردد في التواصل!">
+                        I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!
+                    </p>
+                    
+                    <div class="contact-badges">
+                        <a href="mailto:ghaith.alqattan04@gmail.com" class="contact-badge">
+                            <div class="badge-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="badge-info">
+                                <span class="badge-label" data-en="Email Me" data-ar="راسلني">Email Me</span>
+                                <span class="badge-value">ghaith.alqattan04@gmail.com</span>
+                            </div>
+                        </a>
+                        
+                        <a href="tel:+963944520044" class="contact-badge">
+                            <div class="badge-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="badge-info">
+                                <span class="badge-label" data-en="Call Me" data-ar="اتصل بي">Call Me</span>
+                                <span class="badge-value">+963-944520044</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://linkedin.com/in/ghaith-al-qattan" target="_blank" class="contact-badge">
+                            <div class="badge-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="badge-info">
+                                <span class="badge-label" data-en="LinkedIn" data-ar="لينكد إن">LinkedIn</span>
+                                <span class="badge-value">linkedin.com/in/ghaith-al-qattan</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://github.com/ghaith-al-qattan" target="_blank" class="contact-badge">
+                            <div class="badge-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="badge-info">
+                                <span class="badge-label" data-en="GitHub" data-ar="غيت هاب">GitHub</span>
+                                <span class="badge-value">github.com/ghaith-al-qattan</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-illustration">
+                    <div class="floating-element element-1">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="floating-element element-2">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="floating-element element-3">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="floating-element element-4">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <footer class="footer">
+                <p>&copy; 2026 Mohammad Ghaith. <span data-en="All rights reserved." data-ar="جميع الحقوق محفوظة.">All rights reserved.</span></p>
+                <p data-en="Crafted with passion and code" data-ar="صنع بشغف وكود">Crafted with passion and code ❤️</p>
+            </footer>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
