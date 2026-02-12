@@ -1407,7 +1407,7 @@ body {
 ================================ */
 .contact-content {
   max-width: 1200px;
-  width: 90%;
+  width: 100%;
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: 4rem;
