@@ -884,7 +884,7 @@ body {
 
 .scroll-indicator {
   position: absolute;
-  bottom: 3rem;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
